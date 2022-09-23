@@ -29,8 +29,7 @@
                 flex-wrap: wrap;
             }
         </pre>
-    </section>
-    <section>
+    
         <p class="">Flexbox Column</p>
         <p class="">Use this to create a Flexbox column layout</p>
         <pre>
@@ -39,19 +38,18 @@
                 flex-direction: column;
             }
         </pre>
-    </section>
-    <section>
-        <p class="">Flexbox Row</p>
-        <p class="">Use these properties to creat a Flexbox rerow Layout</p>
+    
+        <p class="">CSS Grid Layout</p>
+        <p class="">Build a 12-column layout using CSS Grid</p>
         <pre>
-            .row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+            .grid {
+                display: grid;
+                width: 100%;
+                grid-template-columns:
+            repeat(12, 1fr);    
             }
         </pre>
-    </section>
-    <section>
+    
         <p class="">Linear Gradients</p>
         <p class="">This will create a background linear gradient from top to bottom</p>
         <pre>
@@ -63,31 +61,40 @@
              );
             }
         </pre>
-    </section>
-    <section>
-        <p class="">Flexbox Row</p>
-        <p class="">Use these properties to creat a Flexbox rerow Layout</p>
+    
+        <p class="">Box Transition Glow</p>
+        <p class="">Use Transition and box shadows to glow on hover</p>
         <pre>
-            .row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+            .code-card .card-header {
+                border-radius: 8px;
+                transition: all 0.5s ease-in-
+            out;
+            }
+            
+            .code-card:hover,
+            .code-card:hover .card-header {
+                box-shadow: inset 0px 0px 8px
+            rgba(232,102,236,1), 0 0 15px
+            rgba(232,102,236,1);
             }
         </pre>
-    </section>
-    <section>
-        <p class="">Flexbox Row</p>
-        <p class="">Use these properties to creat a Flexbox rerow Layout</p>
+    
+    
+        <p class="">Overlay Card with Title</p>
+        <p class="">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
         <pre>
-            .row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+            .card-header {
+                position:relative;
+                margin-top: -20px;
             }
         </pre>
     </section>
 
 </main>
+
+<footer>
+    <h1> Made with ❤️ and CSS </h1>
+</footer>
 
 
 </body>
