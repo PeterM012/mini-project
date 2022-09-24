@@ -1,8 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
+
 
 body {
     background-color: #40415c;
@@ -16,6 +15,16 @@ header {
     padding: 15px;
 }
 
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    color: hotpink
+}
+
 article {
     text-align: center;
     color: white;
@@ -26,67 +35,77 @@ article {
 }
 
 main {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 100px;
-    grid-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-width: 400px;
+    max-width: 100%
 }
-pre {
-    background: linear-gradient(#239daa, #7f3da3);
-    }
+
+section {
+    border-radius: 5px;
+    border: 5px white dotted;
+}
+
+.box {
+  flex: 0 0 0;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px
+}
+
+.box h2 { 
+    margin: 5px
+}
+
+h2 {
+    color: orange;
+    border: solid;
+    border-width: 2px;
+    text-align:center
+}
+
+.target {
+    font-size: 12px;
+    transition: font-size 1s;
+}
+
+.target:hover {
+    font-size: 24px;
+    color: white;
+    background-color: blueviolet;
+}
 
 p {
     color: white;
 }
 
-.text-title {
-    margin:auto;
-    color: white;
-    border-radius: 5px;
-    width: 25%;
-    border: 1px white solid;
-    width: 50%;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.line-position{
-    line-height: 1;
-    padding: 10px
-
-}
-
-.text-description {
-    color: white
-}
-
 pre {
-    line-height: 1.5;
-    border-radius: 20px;
-    padding: 24px;
-    margin: 24px;
-    background: linear-
-    gradient(
-        rgba(81, 206, 166, 0.3) 0%,
-        rgba(81, 206, 166, 0.3) 100%
-        );
-    user-select: text;
-    align-items: center;
+    margin:10px;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(#45bdad, #6a3680);
     }
 
-section {
-    width: 100%;
-    border: 1px white solid;
-    background-color: transparent;
-    border-style: dotted;
-    object-fit: contain;
+.all {
+    user-select: all;
 }
 
 footer {
     text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+  }
+  
 @media screen and (max-width: 768px) {
-    section {flex-direction: column}
-}   
+    .card {
+      width: 100%;
+    }
+  }

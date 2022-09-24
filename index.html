@@ -10,19 +10,19 @@
 
 
 <body>
-<header>
+<header class="main-header">
     <h1>CSS Snippet CheatSheet</h1>
 </header>
 
-<article>
+<article class="main-header">
     <p>Ever have trouble recalling syntax for your favorite CSS code? Give it a permanent home and add it to this Page! Select any snippet below and it'll automatically select all of the code for you to copy</p>
 </article>
 
 <main>
-    <section class="product-grid">
-        <strong><p class="text-title">Flexbox Row</p></strong>
-        <p class="line-position">Use these properties to creat a Flexbox rerow Layout</p>
-        <pre class="text-description">
+    <section class="box">
+        <h2 class="target">Flexbox Row</h2>
+        <p>Use these properties to creat a Flexbox rerow Layout</p>
+        <pre class="all">
     .row {
         display: flex;
         flex-direction: row;
@@ -30,20 +30,20 @@
         }
         </pre>
     </section>
-    <section class="product-grid">
-        <strong><p class="text-title">Flexbox Column</p></strong>
-        <p class="line-position">Use this to create a Flexbox column layout</p>
-        <pre class="text-description">
+    <section class="box">
+        <h2 class="target">Flexbox Column</h2>
+        <p>Use this to create a Flexbox column layout</p>
+        <pre class="all">
     .column {
       display: flex;
       flex-direction: column;
         }
         </pre>
     </section>
-    <section class="product-grid">
-        <strong><p class="text-title">CSS Grid Layout</p></strong>
-        <p class="line-position">Build a 12-column layout using CSS Grid</p>
-        <pre class="text-description">
+    <section class="box">
+        <h2 class="target">CSS Grid Layout</h2>
+        <p>Build a 12-column layout using CSS Grid</p>
+        <pre class="all">
     .grid {
         display: grid;
         width: 100%;
@@ -52,45 +52,45 @@
         }
         </pre>
     </section>
-    <section class="product-grid">
-        <strong><p class="text-title">Linear Gradients</p></strong>
-        <p class="line-position">This will create a background linear gradient from top to bottom</p>
-        <pre class="text-description">
-            .linear-gradient-background {
-                background-image: linear-
-            gradient(
-                rgba(232, 102, 236, 0.3) 0%,
-                rgba(232, 102, 236, 0.6) 100%
-             );
-            }
+    <section class="box">
+        <h2 class="target">Linear Gradients</h2>
+        <p>This will create a background linear gradient from top to bottom</p>
+        <pre class="all">
+    .linear-gradient-background {
+        background-image: linear-
+        gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+        );
+        }
         </pre>
     </section>
-    <section class="product-grid">
-        <strong><p class="text-title">Box Transition Glow</p></strong>
-        <p class="line-position">Use Transition and box shadows to glow on hover</p>
-        <pre class="text-description">
-            .code-card .card-header {
-                border-radius: 8px;
-                transition: all 0.5s ease-in-
-            out;
-            }
+    <section class="box">
+        <h2 class="target">Box Transition Glow</h2>
+        <p>Use Transition and box shadows to glow on hover</p>
+        <pre class="all">
+    .code-card .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-
+        out;
+        }
             
-            .code-card:hover,
-            .code-card:hover .card-header {
-                box-shadow: inset 0px 0px 8px
-            rgba(232,102,236,1), 0 0 15px
-            rgba(232,102,236,1);
-            }
+    .code-card:hover,
+        .code-card:hover .card-header {
+        box-shadow: inset 0px 0px 8px
+        rgba(232,102,236,1), 0 0 15px
+        rgba(232,102,236,1);
+        }
         </pre>
     </section>
-    <section class="product-grid">
-        <strong><p class="text-title">Overlay Card with Title</p></strong>
-        <p class="line-position">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
-        <pre class="text-description">
-            .card-header {
-                position:relative;
-                margin-top: -20px;
-            }
+    <section class="box">
+        <h2 class="target">Overlay Card with Title</h2>
+        <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+        <pre class="all">
+    .card-header {
+        position:relative;
+        margin-top: -20px;
+        }
         </pre>
     </section>
 </main>
