@@ -27,7 +27,7 @@ article {
 
 main {
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 100px;
     grid-gap: 50px;
 }
@@ -88,5 +88,5 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    main {flex-direction: column}
+    section {flex-direction: column}
 }   
